@@ -52,21 +52,23 @@
     var waterChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['bottle', 'tap', 'hydro flask', 'cardboard'],
+            labels: ['bottle', 'tap', 'hydro flask', 'cardboard', 'other'],
             datasets: [{
                 label: '# of votes',
-                data: [8, 1, 20, 4],
+                data: [8, 1, 20, 4, 2],
                 backgroundColor: [
                     'rgba(0, 225, 132, 0.2)',
                     'rgba(225, 30, 30, 0.2)',
                     'rgba(0, 0, 255, 0.2)',
-                    'rgba(255, 128, 0, 0.2)'
+                    'rgba(255, 128, 0, 0.2)',
+                    'rgba(10, 0, 0, .1)'
                 ],
                 borderColor: [
                     'rgba(0, 225, 0, 1)',
                     'rgba(255, 30, 30, 1)',
                     'rgba(0, 0, 255, 1)',
-                    'rgba(255, 128, 0, 1)'
+                    'rgba(255, 128, 0, 1)',
+                    'rgba(10, 0, 0, 0.5)'
                 ],
                 borderWidth: 5
             }]
