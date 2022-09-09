@@ -44,17 +44,18 @@
         }
     });
 </script>
+<div style="width: 300px">
 <canvas id="waterChart"></canvas>
 </div>
 <script>
-    var ctx = document.getElementById('myChart');
+    var ctx = document.getElementById('waterChart');
     var waterChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['Green', 'Red', 'Blue', 'orange'],
+            labels: ['bottle', 'tap', 'hydro flask', 'cardboard'],
             datasets: [{
                 label: '# of votes',
-                data: [2, 8, 3, 21],
+                data: [8, 1, 20, 4],
                 backgroundColor: [
                     'rgba(0, 225, 132, 0.2)',
                     'rgba(225, 30, 30, 0.2)',
